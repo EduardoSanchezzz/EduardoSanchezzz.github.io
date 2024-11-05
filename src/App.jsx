@@ -31,7 +31,7 @@ function App() {
           <img src={line} className='line' alt='line' />
         </div>
         <div className='name'>
-          <div>EDUARD</div>
+          <div>EDUARDO</div>
           <div className='sanchez'>SANCHEZ</div>
         </div>
         <div className='icons-container'>

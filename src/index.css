@@ -49,12 +49,23 @@ p {
   justify-content: center;
   align-self: center;
   align-items: center;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
 }
-.navbar .line {
+.scroll-container {
   position: absolute;
   bottom: 0;
   width: 90vw;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  gap: -5px;
+}
+.scroll-container .line {
+  width: 90vw;
+  animation: 3s infinite navbarMotion;
 }
 .navbar a {
   padding: 0vw 1vw;
@@ -73,8 +84,8 @@ p {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 1fr 6fr 1fr;
-  grid-template-areas: 'nav' 'name' 'icons';
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:'name' 'icons';
 }
 .name {
   grid-area: name;
@@ -108,6 +119,7 @@ p {
   z-index: -1;
 }
 .icons-container {
+  grid-area: icons;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -291,4 +303,35 @@ p {
   flex-direction: column;
   gap: 1vh;
   font-size: 1vw;
+}
+
+@keyframes navbarMotion {
+  0% {
+    transform: translate(0vw);
+  }
+  50% {
+    transform: translate(-70vw);
+  } 
+  100% {
+    transform: translate(0vw);
+  } 
+}
+
+.about-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  padding: 10vh 10vw;
+  align-items: start;
+  justify-content: space-between;
+  gap: 3vw;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+}
+.me-img img {
+  width: 40vw;
+  max-width: 500px;
 }

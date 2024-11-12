@@ -15,6 +15,7 @@ import './App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Navbar from './Navbar'
 
 function App() {
   useEffect(()=> {
@@ -26,19 +27,8 @@ function App() {
 
   return (
     <>
+      <Navbar/>
       <div className='landing-container' id='home'>
-        <div className='navbar' data-aos="slide-down">
-          <a href='#projects'>
-            <h1>projects</h1>
-          </a>
-          <a href='#experience'>
-            <h1>experience</h1>
-          </a>
-          <a href='#contact'>
-            <h1>contact</h1>
-          </a>
-          <img src={line} className='line' alt='line' />
-        </div>
         <div className='name' data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in">
           <div>EDUARDO</div>
           <div className='sanchez'>SANCHEZ</div>

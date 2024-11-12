@@ -12,13 +12,22 @@ import vennCard from './assets/venncard.png'
 import imcCard from './assets/imc-card.png'
 import rxCard from './assets/rxcard.png'
 import './App.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(()=> {
+    AOS.init({
+      duration: 800,
+      easing: 'ease',
+    });
+  },[]);
 
   return (
     <>
       <div className='landing-container' id='home'>
-        <div className='navbar'>
+        <div className='navbar' data-aos="slide-down">
           <a href='#projects'>
             <h1>projects</h1>
           </a>
@@ -30,7 +39,7 @@ function App() {
           </a>
           <img src={line} className='line' alt='line' />
         </div>
-        <div className='name'>
+        <div className='name' data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in">
           <div>EDUARDO</div>
           <div className='sanchez'>SANCHEZ</div>
         </div>
@@ -44,37 +53,41 @@ function App() {
       <div className='projects-container' id='projects'>
         <img src={line} className='line' alt='line' />
         <h1>projects</h1>
-        <div className="project-container cpu">
+        <div className="project-container cpu" data-aos="fade-up">
           <div className="title">RISC-V Processor</div>
-          <a href="https://eduardosanchezzz.github.io/cpu-flow/" target='blank'><img src={proj1} alt="" /></a>
+          <a href="https://eduardosanchezzz.github.io/cpu-flow/" target='blank'>
+            <img src={proj1} alt=""/>
+          </a>
         </div>
-        <div className="project-container music">
+        <div className="project-container music" data-aos="fade-up">
           <div className="title">Music Showcase Website</div>
-          <a href="https://eduardosanchezzz.github.io/music-collection-app/" target='blank'><img src={proj2} alt="" /></a>
+          <a href="https://eduardosanchezzz.github.io/music-collection-app/" target='blank'>
+            <img src={proj2} alt=""/>
+          </a>
         </div>
       </div>
       <div className="experience-container" id='experience'>
         <img src={line} className='line' alt='line' />
         <h1>experience</h1>
         <div className='exp-cont'>
-          <a href="#experience" className='job-card'>
+          <a href="#experience" className='job-card' data-aos="fade-right">
             <img src={appleCard} alt="" />
             <div className='job-title'>RFHW Engineer Intern</div>
             <div className='job-date'>Fall 2023</div>
           </a>
-          <a href="#experience" className='job-card'>
+          <a href="#experience" className='job-card' data-aos="fade-down">
             <img src={rxCard} alt="" />
             <div className='job-title'>SW Engineer Intern</div>
             <div className='job-date'>Winter 2023</div>
           </a>
         </div>
         <div className='exp-cont'>
-          <a href="#experience" className='job-card'>
+          <a href="#experience" className='job-card' data-aos="fade-up">
             <img src={vennCard} alt="" />
             <div className='job-title'>SW Developer Intern</div>
             <div className='job-date'>Winter 2022</div>
           </a>
-          <a href="#experience" className='job-card'>
+          <a href="#experience" className='job-card' data-aos="fade-left">
             <img src={imcCard} alt="" />
             <div className='job-title'>SW Developer Intern</div>
             <div className='job-date'>Fall 2020</div>

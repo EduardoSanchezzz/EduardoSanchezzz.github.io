@@ -113,7 +113,7 @@ p {
   flex-direction: row;
   align-items: start;
   justify-content: center;
-  gap: 5vw
+  gap: 5vw;
 }
 .icons-container img {
   width: 3vw;

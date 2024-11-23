@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import ErrorPage from './error-page.jsx';
 import About from './About.jsx';
+import CpuProj from './CpuProj.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "About",
     element: <About />
+  },
+  {
+    path: 'projects/riscv-processor',
+    element: <CpuProj />,
   }
 ]);
 

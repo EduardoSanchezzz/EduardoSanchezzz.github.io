@@ -45,7 +45,7 @@ function App() {
         <h1>projects</h1>
         <div className="project-container cpu" data-aos="fade-up">
           <div className="title">RISC-V Processor</div>
-          <a href="https://eduardosanchezzz.github.io/cpu-flow/" target='blank'>
+          <a href="/projects/riscv-processor" target='blank'>
             <img src={proj1} alt=""/>
           </a>
         </div>

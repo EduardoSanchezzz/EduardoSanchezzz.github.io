@@ -335,3 +335,12 @@ p {
   width: 40vw;
   max-width: 500px;
 }
+.project-page {
+  margin: 0 5vw;
+}
+.project-page p, .project-page h4 {
+  margin: 0;
+}
+.project-page p {
+margin-bottom: 2vh;
+}

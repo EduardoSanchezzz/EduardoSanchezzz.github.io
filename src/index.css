@@ -344,3 +344,33 @@ p {
 .project-page p {
 margin-bottom: 2vh;
 }
+@media screen and (max-width: 768px) {
+  .name{
+    font-size: 14vw;
+  }
+  h1{
+    font-size: 3vw;
+  }
+  .icons-container img, .footer-container img{
+    width: 9vw;
+  }
+  .landing-container{
+    height: 70vh;
+  }
+  .navbar{
+    height: 7vh;
+  }
+  .job-title, .job-date{
+    margin: 5vw 0;
+  }
+  .job-date{
+    font-size: 2.5vw;
+  }
+  .contact{
+    font-size: 1.5vh;
+  }
+  .contact-info{
+    font-size: 1vh;
+  }
+
+}

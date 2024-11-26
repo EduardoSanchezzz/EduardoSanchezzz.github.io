@@ -1,6 +1,6 @@
-import Navbar from "./Navbar"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import line from './assets/line.svg'
 import { useEffect } from "react";
 
 function CpuProj() {
@@ -12,7 +12,22 @@ function CpuProj() {
   },[]);
   return(
     <>
-      <Navbar/>
+      <div className='navbar' data-aos="slide-down">
+      <a href='/'>
+        <h1>home</h1>
+      </a>
+      <a href='/#projects'>
+        <h1>projects</h1>
+      </a>
+      <a href='/about'>
+        <h1>about</h1>
+      </a>
+      <div className='scroll-container'>
+        <img src={line} className='line' alt='line' /> 
+        <img src={line} className='line' alt='line' />
+        <img src={line} className='line' alt='line' />
+      </div>
+    </div>
       <div className="project-page">
         <h2>RISC-V Processor Simulator</h2>
         <h3>Tools</h3>

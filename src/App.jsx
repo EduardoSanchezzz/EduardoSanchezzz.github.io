@@ -15,19 +15,33 @@ import './App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import Navbar from './Navbar'
 
 function App() {
-  useEffect(()=> {
+  useEffect(() => {
     AOS.init({
       duration: 800,
       easing: 'ease',
     });
-  },[]);
+  }, []);
 
   return (
     <>
-      <Navbar/>
+      <div className='navbar' data-aos="slide-down">
+        <a href='/#projects'>
+          <h1>projects</h1>
+        </a>
+        <a href='/#experience'>
+          <h1>experience</h1>
+        </a>
+        <a href='/about'>
+          <h1>about</h1>
+        </a>
+        <div className='scroll-container'>
+          <img src={line} className='line' alt='line' />
+          <img src={line} className='line' alt='line' />
+          <img src={line} className='line' alt='line' />
+        </div>
+      </div>
       <div className='landing-container' id='home'>
         <div className='name' data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in">
           <div>EDUARDO</div>
@@ -46,13 +60,13 @@ function App() {
         <div className="project-container cpu" data-aos="fade-up">
           <div className="title">RISC-V Processor</div>
           <a href="/projects/riscv-processor" target='blank'>
-            <img src={proj1} alt=""/>
+            <img src={proj1} alt="" />
           </a>
         </div>
         <div className="project-container music" data-aos="fade-up">
           <div className="title">Music Showcase Website</div>
           <a href="https://eduardosanchezzz.github.io/music-collection-app/" target='blank'>
-            <img src={proj2} alt=""/>
+            <img src={proj2} alt="" />
           </a>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import line from './assets/line.svg'
 import home from './assets/home-icon.png'
 import me from './assets/me.png'
@@ -7,18 +6,33 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
 function About() {
-  useEffect(()=> {
+  useEffect(() => {
     AOS.init({
       duration: 800,
       easing: 'ease',
     });
-  },[]);
+  }, []);
   return (
     <>
-      <Navbar />
+      <div className='navbar' data-aos="slide-down">
+        <a href='/'>
+          <h1>home</h1>
+        </a>
+        <a href='/#projects'>
+          <h1>projects</h1>
+        </a>
+        <a href='/#experience'>
+          <h1>experience</h1>
+        </a>
+        <div className='scroll-container'>
+          <img src={line} className='line' alt='line' />
+          <img src={line} className='line' alt='line' />
+          <img src={line} className='line' alt='line' />
+        </div>
+      </div>
       <div className='about-container'>
         <div className="about-text">
-          <h2>Hi I'm <span style={{color:'#FF59B7'}}>Eduardo</span> :)</h2>
+          <h2>Hi I'm <span style={{ color: '#FF59B7' }}>Eduardo</span> :)</h2>
           <h3>I'm a recent Electrical Engineering graduate from the University of Waterloo with a passion for solving challenges in hardware and software.</h3>
           <div className="about-me">
             <p>🎧 I'm always listening to music and I love exploring new sounds.</p>
@@ -26,7 +40,7 @@ function About() {
             <p>🐶 I love spending time with my dog, exploring trails or just enjoying the fresh air.</p>
           </div>
           <h4>As an engineer, I love solving problems. I believe in presenting my work clearly so it's easy for anyone to grasp. I thrive on continuous learning and collaboration to make a meaningful impact.</h4>
-          <p>I'd love to get in touch! Say hi at <a style={{color:'#FF59B7'}} href="mailto:e5sanchez@uwaterloo.ca">e5sanchez@uwaterloo.ca</a></p>
+          <p>I'd love to get in touch! Say hi at <a style={{ color: '#FF59B7' }} href="mailto:e5sanchez@uwaterloo.ca">e5sanchez@uwaterloo.ca</a></p>
         </div>
         <div className="me-img">
           <img src={me} alt="me!" />

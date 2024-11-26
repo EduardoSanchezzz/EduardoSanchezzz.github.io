@@ -66,7 +66,7 @@ function App() {
         </div>
         <div className="project-container music" data-aos="fade-up">
           <div className="title">Music Showcase Website</div>
-          <a href="https://eduardosanchezzz.github.io/music-collection-app/" target='blank'>
+          <a href="https://eduardosanchez.dev/music-collection-app/" target='blank'>
             <img src={proj2} alt="" />
           </a>
         </div>

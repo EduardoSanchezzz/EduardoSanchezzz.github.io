@@ -337,12 +337,41 @@ p {
 }
 .project-page {
   margin: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  text-wrap: wrap;
 }
 .project-page p, .project-page h4 {
   margin: 0;
 }
 .project-page p {
 margin-bottom: 2vh;
+}
+.project-page, .proj-img{
+  width: 80vw;
+  margin-bottom: 2vh;
+  align-self: center;
+}
+.project-page .proj-img img{
+  width: 100%;
+}
+.project-page .line{
+  width: 70vw;
+  padding: 2vh 0;
+  align-self: center;
+}
+
+.proj-img.sub{
+  /* width: 60vw; */
+  max-height: 60vh;
+  max-width: 70vw;
+  width: auto;
+}
+.proj-img-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
 }
 @media screen and (max-width: 768px) {
   .name{
@@ -371,6 +400,10 @@ margin-bottom: 2vh;
   }
   .contact-info{
     font-size: 1vh;
+  }
+  .proj-img.sub{
+    max-height: none;
+    width: 80vw;
   }
 
 }

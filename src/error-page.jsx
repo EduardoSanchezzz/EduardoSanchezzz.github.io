@@ -1,4 +1,4 @@
-import { useRouteError } from "react-router-dom";
+import { Link, useRouteError } from "react-router-dom";
 import home from './assets/home-icon.png'
 
 export default function ErrorPage() {
@@ -12,7 +12,7 @@ export default function ErrorPage() {
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
-      <a href='/'><img src={home} className='logo' alt='Home Icon' /></a>
+      <Link to={'/'}><img src={home} className='logo' alt='Home Icon' /></Link>
     </div>
   );
 }

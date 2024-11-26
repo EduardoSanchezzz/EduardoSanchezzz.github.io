@@ -13,15 +13,15 @@ function CpuProj() {
   return(
     <>
       <div className='navbar' data-aos="slide-down">
-      <a href='/'>
+      <Link to={'/'}>
         <h1>home</h1>
-      </a>
-      <a href='/#projects'>
+      </Link>
+      <Link to={'/#projects'}>
         <h1>projects</h1>
-      </a>
-      <a href='/about'>
+      </Link>
+      <Link to={'/about'}>
         <h1>about</h1>
-      </a>
+      </Link>
       <div className='scroll-container'>
         <img src={line} className='line' alt='line' /> 
         <img src={line} className='line' alt='line' />

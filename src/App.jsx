@@ -15,6 +15,7 @@ import './App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom'
 
 function App() {
   useEffect(() => {
@@ -33,9 +34,9 @@ function App() {
         <a href='/#experience'>
           <h1>experience</h1>
         </a>
-        <a href='/about'>
+        <Link to={'/about'}>
           <h1>about</h1>
-        </a>
+        </Link>
         <div className='scroll-container'>
           <img src={line} className='line' alt='line' />
           <img src={line} className='line' alt='line' />

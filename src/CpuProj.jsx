@@ -2,6 +2,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import line from './assets/line.svg'
 import { useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 function CpuProj() {
   useEffect(()=> {

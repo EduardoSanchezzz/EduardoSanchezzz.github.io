@@ -60,9 +60,9 @@ function App() {
         <h1>projects</h1>
         <div className="project-container cpu" data-aos="fade-up">
           <div className="title">RISC-V Processor</div>
-          <a href="/projects/riscv-processor" target='blank'>
+          <Link to={"/projects/riscv-processor"}>
             <img src={proj1} alt="" />
-          </a>
+          </Link>
         </div>
         <div className="project-container music" data-aos="fade-up">
           <div className="title">Music Showcase Website</div>

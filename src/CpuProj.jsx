@@ -30,7 +30,7 @@ function CpuProj() {
       </div>
     </div>
       <div className="project-page">
-        <h2>RISC-V Processor Simulator</h2>
+        <h2><a style={{textDecoration: 'underline'}} href='/cpu-flow' target='_blank'>RISC-V Processor Simulator</a></h2>
         <h3>Tools</h3>
         <p>React, TypeScript, Computer Architecture, RISC-V ISA, Digital Logic Design</p>
         <h3>Features</h3>

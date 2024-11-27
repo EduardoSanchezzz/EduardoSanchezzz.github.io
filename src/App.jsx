@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <div className='navbar' data-aos="slide-down">
+      <div className='navbar' data-aos="slide-down" data-aos-once='true'>
         <a href='/#projects'>
           <h1>projects</h1>
         </a>

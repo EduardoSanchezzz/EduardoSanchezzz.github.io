@@ -23,7 +23,7 @@ function CpuProj() {
   },[]);
   return(
     <>
-      <div className='navbar' data-aos="slide-down">
+      <div className='navbar' data-aos="slide-down" data-aos-once='true'>
       <Link to={'/'}>
         <h1>home</h1>
       </Link>

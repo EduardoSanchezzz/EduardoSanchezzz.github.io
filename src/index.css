@@ -205,6 +205,9 @@ p {
 .music a::after {
   content: 'Responsive website showcasing a music collection';
 }
+.claw a::after {
+  content: 'Claw machine controller implemented using VHDL';
+}
 .experience-container{
   position: relative;
   display: flex;
@@ -330,6 +333,9 @@ p {
   display: flex;
   flex-direction: column;
   width: 35vw;
+}
+.about-text a:hover{
+  text-decoration: underline;
 }
 .me-img img {
   width: 40vw;

@@ -34,7 +34,7 @@ function About() {
       <div className='about-container'>
         <div className="about-text">
           <h2>Hi I'm <span style={{ color: '#FF59B7' }}>Eduardo</span> :)</h2>
-          <h3>I'm a recent Electrical Engineering graduate from the University of Waterloo with a passion for solving challenges in hardware and software.</h3>
+          <h3>I'm an Electrical Engineering student at the University of Waterloo with a passion for solving challenges in hardware and software.</h3>
           <div className="about-me">
             <p>🎧 I'm always listening to music and I love exploring new sounds.</p>
             <p>🤔 I'm a Mexican-Canadian engineer, always curious and eager to tackle challenges.</p>

@@ -8,6 +8,7 @@ import resumeFile from './assets/EduardoSanchez.pdf'
 import proj1 from './assets/proj1.png'
 import proj2 from './assets/proj2.png'
 import proj3 from './assets/proj3.png'
+import proj4 from './assets/proj4.png'
 import appleCard from './assets/apple-card.png'
 import vennCard from './assets/venncard.png'
 import imcCard from './assets/imc-card.png'
@@ -69,6 +70,12 @@ function App() {
           <div className="title">Claw Machine Controller</div>
           <a href="https://github.com/EduardoSanchezzz/ClawMachineController" target='blank'>
             <img src={proj3} alt="" />
+          </a>
+        </div>
+        <div className="project-container lte" data-aos="fade-up">
+          <div className="title">LTE Transceiver Uplink</div>
+          <a href="https://github.com/EduardoSanchezzz/RFFEUplink" target='blank'>
+            <img src={proj4} alt="" />
           </a>
         </div>
         <div className="project-container music" data-aos="fade-up">

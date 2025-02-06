@@ -208,6 +208,9 @@ p {
 .claw a::after {
   content: 'Claw machine controller implemented using VHDL';
 }
+.lte a::after {
+  content: 'Design of LTE RF Uplink using SystemVue simulation engine';
+}
 .experience-container{
   position: relative;
   display: flex;

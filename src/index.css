@@ -211,6 +211,9 @@ p {
 .lte a::after {
   content: 'Design of LTE RF Uplink using SystemVue simulation engine';
 }
+.uart a::after {
+  content: 'Implementation of UART Module using SystemVerilog';
+}
 .experience-container{
   position: relative;
   display: flex;
